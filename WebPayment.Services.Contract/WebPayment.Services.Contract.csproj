@@ -1,8 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
-<!--        <PackageReference Include="Moq.EntityFrameworkCore" />-->
-    </ItemGroup>
-    <ItemGroup>
         <ProjectReference Include="..\WebPayment.Domain\WebPayment.Domain.csproj" />
     </ItemGroup>
 </Project>

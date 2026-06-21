@@ -7,13 +7,17 @@ public class PaymentDetail
 {
     [Key]
     public int PaymentDetailId { get; set; }
-    [Column(TypeName = "nvarchar(100)")]
+    
+    [Column(TypeName = "varchar(100)")]
     public string CardOwnerName { get; set; } = string.Empty;
-    [Column(TypeName = "nvarchar(16)")]
+
+    [Column(TypeName = "varchar(16)")]
     public string CardNumber { get; set; } = string.Empty;
+
     //MM/YY
-    [Column(TypeName = "nvarchar(5)")]
+    [Column(TypeName = "varchar(5)")]
     public string ExpirationDate { get; set; } = string.Empty;
-    [Column(TypeName = "nvarchar(3)")]
-    public string SecurityCode { get; set; }  = string.Empty;
+
+    [Column(TypeName = "varchar(3)")]
+    public string SecurityCode { get; set; } = string.Empty;
 }
