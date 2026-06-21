@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector"  />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk"  />
+    <PackageReference Include="xunit"  />
+    <PackageReference Include="xunit.runner.visualstudio"  />
+    <PackageReference Include="Moq" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebPayment.Server\WebPayment.Server.csproj" />
+    <ProjectReference Include="..\WebPayment.Services\WebPayment.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <SpaRoot>..\webpayment.client\</SpaRoot>
+    <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:51774</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+<!--    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />-->
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\webpayment.client\webpayment.client.esproj"/>
+        <ProjectReference Include="..\WebPayment.Domain\WebPayment.Domain.csproj" />
+        <ProjectReference Include="..\WebPayment.Services.Contract\WebPayment.Services.Contract.csproj" />
+        <ProjectReference Include="..\WebPayment.Services\WebPayment.Services.csproj" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
