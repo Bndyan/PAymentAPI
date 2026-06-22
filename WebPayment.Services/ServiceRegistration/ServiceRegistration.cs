@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using WebPayment.Services.Contract.IMapper;
+using WebPayment.Services.Mapper;
 
-namespace WebPayment.Services.Contract.ServiceRegistration;
+namespace WebPayment.Services.ServiceRegistration;
 
 public static class ServiceRegistration
 {

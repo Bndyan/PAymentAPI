@@ -1,6 +1,14 @@
-﻿namespace WebPayment.Services.Contract.DTOs;
+﻿using AutoMapper;
+using WebPayment.Domain.Entity;
 
-public class MappingProfile
+namespace WebPayment.Services.Contract.DTOs;
+
+public class MappingProfile : Profile
 {
+    public MappingProfile()
+    {
+        CreateMap<PaymentDetail, PaymentDetailDto>();
+        CreateMap<PaymentDetailDto, PaymentDetail>();
+    }
     
 }
